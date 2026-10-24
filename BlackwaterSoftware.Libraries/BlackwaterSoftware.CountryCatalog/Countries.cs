@@ -14,7 +14,7 @@ namespace BlackwaterSoftware.CountryCatalog
         public static readonly Country BurkinaFaso = new("Burkina Faso", "+226", "BF", "BFA",  Continent.Africa, Region.WesternAfrica, "Franc", "XOF");
         public static readonly Country Burundi = new("Burundi", "+257", "BI", "BDI",  Continent.Africa, Region.EasternAfrica, "Franc", "BIF");
         public static readonly Country Cameroon = new("Cameroon", "+237", "CM", "CMR",  Continent.Africa, Region.MiddleAfrica, "Franc", "XAF");
-        public static readonly Country CapeVerde = new("Cape Verde", "+238", "CV", "CPV",  Continent.Africa, Region.WesternAfrica, "Escudo", "CVE");
+        public static readonly Country CaboVerde = new("Cabo Verde", "+238", "CV", "CPV",  Continent.Africa, Region.WesternAfrica, "Escudo", "CVE");
         public static readonly Country CentralAfricanRepublic = new("Central African Republic", "+236", "CF", "CAF",  Continent.Africa, Region.MiddleAfrica, "Franc", "XAF");
         public static readonly Country Chad = new("Chad", "+235", "TD", "TCD",  Continent.Africa, Region.MiddleAfrica, "Franc", "XAF");
         public static readonly Country Comoros = new("Comoros", "+269", "KM", "COM",  Continent.Africa, Region.EasternAfrica, "Franc", "KMF");
@@ -25,6 +25,7 @@ namespace BlackwaterSoftware.CountryCatalog
         public static readonly Country Egypt = new("Egypt", "+20", "EG", "EGY",  Continent.Africa, Region.NorthernAfrica, "Pound", "EGP");
         public static readonly Country EquatorialGuinea = new("Equatorial Guinea", "+240", "GQ", "GNQ",  Continent.Africa, Region.MiddleAfrica, "Franc", "XAF");
         public static readonly Country Eritrea = new("Eritrea", "+291", "ER", "ERI",  Continent.Africa, Region.EasternAfrica, "Nakfa", "ERN");
+        public static readonly Country Eswatini = new("Eswatini", "+268", "SZ", "SWZ", Continent.Africa, Region.SouthernAfrica, "Lilangeni", "SZL");
         public static readonly Country Ethiopia = new("Ethiopia", "+251", "ET", "ETH",  Continent.Africa, Region.EasternAfrica, "Birr", "ETB");
         public static readonly Country Gabon = new("Gabon", "+241", "GA", "GAB",  Continent.Africa, Region.MiddleAfrica, "Franc", "XAF");
         public static readonly Country TheGambia = new("The Gambia", "+220", "GM", "GMB",  Continent.Africa, Region.WesternAfrica, "Dalasi", "GMD");
@@ -54,7 +55,6 @@ namespace BlackwaterSoftware.CountryCatalog
         public static readonly Country SouthAfrica = new("South Africa", "+27", "ZA", "ZAF",  Continent.Africa, Region.SouthernAfrica, "Rand", "ZAR");
         public static readonly Country SouthSudan = new("South Sudan", "+211", "SS", "SSD",  Continent.Africa, Region.EasternAfrica, "Pound", "SSP");
         public static readonly Country Sudan = new("Sudan", "+249", "SD", "SDN",  Continent.Africa, Region.NorthernAfrica, "Pound", "SDG");
-        public static readonly Country Swaziland = new("Swaziland", "+268", "SZ", "SWZ",  Continent.Africa, Region.SouthernAfrica, "Lilangeni", "SZL");
         public static readonly Country Tanzania = new("Tanzania", "+255", "TZ", "TZA",  Continent.Africa, Region.EasternAfrica, "Shilling", "TZS");
         public static readonly Country Togo = new("Togo", "+228", "TG", "TGO",  Continent.Africa, Region.WesternAfrica, "Franc", "XOF");
         public static readonly Country Tunisia = new("Tunisia", "+216", "TN", "TUN",  Continent.Africa, Region.NorthernAfrica, "Dinar", "TND");
@@ -231,7 +231,7 @@ namespace BlackwaterSoftware.CountryCatalog
             BurkinaFaso,
             Burundi,
             Cameroon,
-            CapeVerde,
+            CaboVerde,
             CentralAfricanRepublic,
             Chad,
             Comoros,
@@ -271,7 +271,7 @@ namespace BlackwaterSoftware.CountryCatalog
             SouthAfrica,
             SouthSudan,
             Sudan,
-            Swaziland,
+            Eswatini,
             Tanzania,
             Togo,
             Tunisia,
