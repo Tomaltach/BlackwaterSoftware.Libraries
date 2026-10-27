@@ -17,6 +17,7 @@
         WesternAsia,
 
         // Europe
+        CentralEurope,
         EasternEurope,
         NorthernEurope,
         SouthernEurope,
