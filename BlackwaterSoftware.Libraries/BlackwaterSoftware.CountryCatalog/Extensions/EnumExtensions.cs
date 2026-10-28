@@ -2,8 +2,24 @@
 
 namespace BlackwaterSoftware.CountryCatalog.Extensions
 {
+    /// <summary>
+    /// Provides extension methods for converting catalog enums into
+    /// human-readable display names.
+    /// </summary>
     public static class EnumExtensions
     {
+        /// <summary>
+        /// Gets the human-readable display name of a continent.
+        /// </summary>
+        /// <param name="continent">
+        /// The continent whose display name is required.
+        /// </param>
+        /// <returns>
+        /// The display name of the specified continent.
+        /// </returns>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// The specified value is not a recognised <see cref="Continent"/> member.
+        /// </exception>
         public static string ToDisplayName(this Continent continent)
         {
             return continent switch
@@ -19,6 +35,18 @@ namespace BlackwaterSoftware.CountryCatalog.Extensions
             };
         }
 
+        /// <summary>
+        /// Gets the human-readable display name of a geographic region.
+        /// </summary>
+        /// <param name="region">
+        /// The region whose display name is required.
+        /// </param>
+        /// <returns>
+        /// The display name of the specified region.
+        /// </returns>
+        /// <exception cref="ArgumentOutOfRangeException">
+        /// The specified value is not a recognised <see cref="Region"/> member.
+        /// </exception>
         public static string ToDisplayName(this Region region)
         {
             return region switch

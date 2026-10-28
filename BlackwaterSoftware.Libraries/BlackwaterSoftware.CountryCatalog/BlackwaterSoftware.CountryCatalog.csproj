@@ -21,6 +21,7 @@
 
         <!-- Package generation -->
         <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 
         <!-- Source repository -->
@@ -33,9 +34,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="README.md"
+        <None Update="README.md"
               Pack="true"
               PackagePath="\" />
+
+        <None Update="$(OutputPath)$(AssemblyName).xml"
+              Pack="true"
+              PackagePath="lib/$(TargetFramework)/"
+              Visible="false" />
     </ItemGroup>
 
 </Project>
