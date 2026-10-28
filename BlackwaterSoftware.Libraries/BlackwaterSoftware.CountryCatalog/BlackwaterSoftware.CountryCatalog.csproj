@@ -33,6 +33,12 @@
         <Deterministic>true</Deterministic>
     </PropertyGroup>
 
+    <PropertyGroup>
+        <DebugType>portable</DebugType>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    </PropertyGroup>
+
     <ItemGroup>
         <None Update="README.md"
               Pack="true"

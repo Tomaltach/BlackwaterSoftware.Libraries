@@ -8,7 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BlackwaterSoftware.CountryCatalog\BlackwaterSoftware.CountryCatalog.csproj" />
+    <PackageReference Include="BlackwaterSoftware.CountryCatalog" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BlackwaterSoftware.Extensions\BlackwaterSoftware.Extensions.csproj" />
   </ItemGroup>
 
