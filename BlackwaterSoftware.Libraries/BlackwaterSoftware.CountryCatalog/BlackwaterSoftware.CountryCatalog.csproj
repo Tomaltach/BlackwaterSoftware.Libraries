@@ -4,8 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Description>A compiled catalogue of countries with ISO 3166-1 alpha-2,
-    alpha-3 and numeric codes.</Description>
+    <Description>A compiled catalogue of countries with ISO 3166-1 alpha-2, alpha-3 and numeric codes.</Description>
     <Authors>Thomas Donegan</Authors>
     <Company>Blackwater Software</Company>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
