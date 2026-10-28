@@ -1,13 +1,41 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Description>A compiled catalogue of countries with ISO 3166-1 alpha-2, alpha-3 and numeric codes.</Description>
-    <Authors>Thomas Donegan</Authors>
-    <Company>Blackwater Software</Company>
-    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-  </PropertyGroup>
+    <PropertyGroup>
+        <!-- Framework -->
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <!-- NuGet package metadata -->
+        <PackageId>BlackwaterSoftware.CountryCatalog</PackageId>
+        <Version>1.0.0</Version>
+        <Title>BlackwaterSoftware.CountryCatalog</Title>
+        <Description>A compiled catalogue of countries and territories with ISO 3166-1 alpha-2 and alpha-3 codes, international calling codes, currency information, and geographic classifications.</Description>
+        <Authors>Thomas Donegan</Authors>
+        <Company>Blackwater Software</Company>
+        <Product>CountryCatalog</Product>
+
+        <!-- Package documentation -->
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageTags>countries;country-catalog;ISO-3166;ISO2;ISO3;calling-codes;currency;geography</PackageTags>
+
+        <!-- Package generation -->
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+
+        <!-- Source repository -->
+        <RepositoryType>git</RepositoryType>
+        <!-- Add RepositoryUrl when your remote repository is available -->
+        <!-- <RepositoryUrl>https://github.com/your-org/your-repo</RepositoryUrl> -->
+
+        <!-- Build configuration -->
+        <Deterministic>true</Deterministic>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="README.md"
+              Pack="true"
+              PackagePath="\" />
+    </ItemGroup>
 
 </Project>
