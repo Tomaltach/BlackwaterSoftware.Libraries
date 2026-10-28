@@ -88,3 +88,4 @@ bld/
 
 # Click-Once directory
 publish/
+*.nupkg
