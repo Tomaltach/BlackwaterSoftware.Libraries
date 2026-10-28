@@ -53,29 +53,29 @@ namespace BlackwaterSoftware.CountryCatalog
         public static IReadOnlyList<Country> All { get; } = Array.AsReadOnly(_all);
 
         #region FrozenDictionary
-        private static readonly FrozenDictionary<string, Country> ByIso2 = _all.ToFrozenDictionary(
+        public static readonly FrozenDictionary<string, Country> ByIso2 = _all.ToFrozenDictionary(
             c => c.Iso2,
             StringComparer.OrdinalIgnoreCase);
 
-        private static readonly FrozenDictionary<string, Country> ByIso3 = _all.ToFrozenDictionary(
+        public static readonly FrozenDictionary<string, Country> ByIso3 = _all.ToFrozenDictionary(
             c => c.Iso3,
             StringComparer.OrdinalIgnoreCase);
 
-        private static readonly FrozenDictionary<Continent, Country[]> ByContinent = _all
+        public static readonly FrozenDictionary<Continent, Country[]> ByContinent = _all
             .GroupBy(c => c.Continent)
             .ToFrozenDictionary(
                 group => group.Key,
                 group => group.OrderBy(c => c.Name)
             .ToArray());
 
-        private static readonly FrozenDictionary<Region, Country[]> ByRegion = _all
+        public static readonly FrozenDictionary<Region, Country[]> ByRegion = _all
             .GroupBy(c => c.Region)
             .ToFrozenDictionary(
                 group => group.Key,
                 group => group.OrderBy(c => c.Name)
             .ToArray());
 
-        private static readonly FrozenDictionary<Continent,FrozenDictionary<Region, IReadOnlyList<Country>>> ByContinentAndRegion = _all
+        public static readonly FrozenDictionary<Continent,FrozenDictionary<Region, IReadOnlyList<Country>>> ByContinentAndRegion = _all
             .GroupBy(c => c.Continent)
             .ToFrozenDictionary(
                 continentGroup => continentGroup.Key,
