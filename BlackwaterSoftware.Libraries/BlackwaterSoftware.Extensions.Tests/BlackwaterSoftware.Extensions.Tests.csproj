@@ -23,10 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="EnumerableTests\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BlackwaterSoftware.Extensions\BlackwaterSoftware.Extensions.csproj" />
   </ItemGroup>
 
