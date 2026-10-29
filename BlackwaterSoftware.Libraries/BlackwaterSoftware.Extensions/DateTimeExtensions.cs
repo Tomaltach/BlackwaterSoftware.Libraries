@@ -32,7 +32,8 @@ namespace BlackwaterSoftware.Extensions
                     "Birth date cannot be after the reference date.");
 
             var age = referenceDate.Year - birthDate.Year;
-            if (birthDate > referenceDate.AddYears(-age)) age--;
+            var birthdayThisYear = birthDate.AddYears(age);
+            if (referenceDate < birthdayThisYear) age--;
             return age;
         }
         #endregion Age
